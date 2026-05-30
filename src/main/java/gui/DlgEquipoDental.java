@@ -308,7 +308,9 @@ public class DlgEquipoDental extends JDialog implements ActionListener {
 					imprimir("Estado.................: " + equipo.getEstadoDescripcion());
 
 					if (dentista != null) {
-						imprimir("Dentista...............: " + dentista.getNombreCompleto());
+						imprimir("Dentista...............: " 
+						        + dentista.getCop() + " - " 
+						        + dentista.getNombreCompleto());
 						imprimir("Correo...............: " + dentista.getCorreo());
 						imprimir("Especialidad...........: " 
 								+ dentista.getEspecialidad().getTitulo());
